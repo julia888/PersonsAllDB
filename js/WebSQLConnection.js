@@ -13,3 +13,4 @@ db.transaction(function (tx) {
         "age INTEGER NOT NULL);")
 });
 
+

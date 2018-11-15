@@ -9,3 +9,4 @@
             usersOS.createIndex('age', 'age', {unique: false});
         }
     });
+
