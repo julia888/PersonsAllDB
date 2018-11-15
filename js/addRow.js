@@ -8,7 +8,6 @@ function init() {
 
 //достаем все записи с БД
 function rowFunc(items) {
-
     if (items.length !== 0) {
         for (let i = 0; i < items.length; i ++){
             let tbl = document.getElementById('tbl');
