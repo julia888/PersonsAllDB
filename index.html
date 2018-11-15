@@ -7,6 +7,8 @@
     <script src="./node_modules/idb/lib/idb.js"></script>
     <script src="js/DbConnection.js"></script>
     <script src="js/addRow.js"></script>
+    <script src="js/PersonDAO.js"></script>
+    <script src="js/WebSQLConnection.js"></script>
 </head>
 <body>
 <div id="container">
@@ -18,6 +20,9 @@
                 <th class="th-head lname-th">Last name</th>
                 <th class="th-head age-th">Age</th>
             </tr>
+            <tbody id="tblBody">
+
+            </tbody>
         </table>
     </div>
     <div class="inputs-block">
@@ -27,16 +32,16 @@
         <label for="inputAge">Age</label><input type="text" id="inputAge">
     </div>
     <div class="btn-block">
-        <input type="button" id="createBtn" value="Create" onclick="btnCreate()">
-        <input type="button" id="readBtn" value="Read" onclick="btnRead()">
-        <input type="button" id="updateBtn" value="Update" onclick="btnUpdate()">
-        <input type="button" id="deleteBtn" value="Delete" onclick="btnDelete()">
+        <input type="button" id="createBtn" value="Create">
+        <input type="button" id="readBtn" value="Read">
+        <input type="button" id="updateBtn" value="Update">
+        <input type="button" id="deleteBtn" value="Delete">
     </div>
     <div class="btn-dao">
-        <input type="button" value="setWindow" onclick="setWindowStorage()">
-        <input type="button" value="setLocalSt" onclick="setLocalStorage()">
-        <input type="button" value="setIndexedDB" onclick="setIndexedDBStorage()">
-        <input type="button" value="setServer" onclick="setServerStorage()">
+        <input type="button" value="setWindow" id="setWindowStorage">
+        <input type="button" value="setLocalSt" id="setLocalStorage">
+        <input type="button" value="setIndexedDB" id="setIndexedDBStorage">
+        <input type="button" value="setServer" id="setServerStorage">
     </div>
     <p id="warn"></p>
 </div>

@@ -1,6 +1,3 @@
-
-//...IndexedDB code
-    //содание БД
     var dbPromise = idb.open('test-db6', 1, function(upgradeDb) {
         //создание таблицы
         if (!upgradeDb.objectStoreNames.contains('store')) {
